@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Acceuil">
+
+
+    <ScrollView
+        android:id="@+id/scol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/Search"
+                android:background="@drawable/shape4"
+                android:hint="  Search Title Book"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="34dp"
+                android:drawableLeft="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp"
+                app:titleMarginStart="10dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="81dp"
+                android:layout_height="91dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo"
+                tools:ignore="MissingConstraints" />
+
+            //// first menu///
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="214dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="48dp"
+                android:fontFamily="@font/baloo"
+                android:text="Books Home "
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="169dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/baloo"
+                android:text="reading is a friendship"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textview1"
+                tools:ignore="MissingConstraints" />
+
+            //// second menu///
+
+            //// Third menu///
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_marginTop="150dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

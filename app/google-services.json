@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "738044727228",
+    "project_id": "bookshome-dcc2a",
+    "storage_bucket": "bookshome-dcc2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738044727228:android:98f2cc27b28f86c958e5b9",
+        "android_client_info": {
+          "package_name": "com.example.boxroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738044727228-17so7lnr2abkjehvk1el650gc1vpgg14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_bA2-_U6Cl9Xu1BHhVsRYAnHDdT4cDqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738044727228-17so7lnr2abkjehvk1el650gc1vpgg14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
